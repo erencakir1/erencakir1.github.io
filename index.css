@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    ;
+    grid-template-rows: 100px 100vh;
+}
+header > img{
+    width: 200px;
+    height: 100px;   
+}
+header{
+    background-color: grey;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+header > span{
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+header > span > a{
+    text-decoration: none;
+    color: white;
+}
+header > span > a:hover{
+    color: rgb(0, 0, 0);
+}
+main{
+    background: url(/imeges/img.jpg) no-repeat center/cover;
+}
